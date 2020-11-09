@@ -16,7 +16,7 @@ const ProjectsSection: FunctionComponent<IProjectsSection> = ({details}: IProjec
                         <>
                         <h4 className="item-title">{item.title}</h4>
                     <ul className="list-unstyled resume-skills-list">
-                        <li key={uuidv4()} className="mb-2">{item.desc}</li>
+                        <li key={uuidv4()} className="mb-2 text-justify">{item.desc}</li>
                     </ul>
                         </>
                     )

@@ -18,7 +18,7 @@ const Intro: FunctionComponent<IIntroProps> = ({summary}: IIntroProps) => {
                                 <ul className="resume-list">
                                     {summary.map(item => {
                                         return (
-                                            <li key={uuidv4()} className="mb-0">{item}</li>
+                                            <li key={uuidv4()} className="mb-0 text-justify">{item}</li>
                                         )
                                     })}
                                 </ul>

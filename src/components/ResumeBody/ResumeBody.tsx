@@ -6,9 +6,9 @@ import InterestSection from "./InterestSection";
 import SkillsSection from "./SkillsSection";
 import AreasOfInterestSection from "./AreasOfInterestSection";
 import AchievementsSection from "./Achievements";
+import LeadershipSection from "./Leadership";
 import HobbiesSection from "./Hobbies";
 import PositionsHeldSection from "./PositionsHeld";
-import ParticipationSection from "./Participation";
 
 export interface IEducation {
     "name": string;
@@ -27,11 +27,6 @@ export interface IPositionsHeld {
     school: string[]
 }
 
-export interface IParticipation {
-    university: string[];
-    school: string[]
-}
-
 export interface IProjects {
     title: string;
     desc: string;
@@ -44,26 +39,27 @@ interface IResumeBodyProps {
     skills: ISkills;
     areasOfInterest: string[];
     achievements: string[];
+    leadership: string[];
     hobbies: string[];
     positionsHeld: IPositionsHeld;
-    participation: IParticipation
+    participation: string[]
 }
 
-const ResumeBody: FunctionComponent<IResumeBodyProps> = ({education, projects, interests, skills,areasOfInterest, achievements, hobbies, positionsHeld, participation}: IResumeBodyProps) => {
+const ResumeBody: FunctionComponent<IResumeBodyProps> = ({education, projects, interests, skills,areasOfInterest, achievements, leadership, hobbies, positionsHeld, participation}: IResumeBodyProps) => {
     return (
         <div className="resume-body">
             <div className="row">
                 <div className="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
                     <EducationSection details={education}/>
                     <ProjectsSection details={projects}/>
+                    <LeadershipSection details={leadership} />
                     <AchievementsSection details={achievements} />
-                    <PositionsHeldSection details={positionsHeld} />
                 </div>
                 <aside className="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
                     <SkillsSection details={skills}/>
                     <AreasOfInterestSection details={areasOfInterest} />
+                    <PositionsHeldSection details={positionsHeld} />
                     <HobbiesSection details={hobbies} />
-                    <ParticipationSection details={participation} />
                 </aside>
             </div>
         </div>

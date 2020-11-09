@@ -17,6 +17,7 @@ function App() {
           <hr />
           <ResumeBody education={json.education} projects={json.projects} interests={json.interests}
                       skills={json.skills} areasOfInterest={json.areasOfInterest} achievements={json.achievements}
+                      leadership={json.leadership}
                       hobbies={json.hobbies} positionsHeld={json.positionsHeld} participation={json.participation} />
           <hr />
           <Footer details={json.footer}/>

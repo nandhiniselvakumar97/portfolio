@@ -44,7 +44,7 @@ const renderContactHref = (type: IContactInfo['type'], value: string|undefined) 
 return (
     <div className="resume-header">
         <div className="row align-items-center">
-            <div className="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+            <div className="resume-title col-12 col-md-6 col-lg-8 col-xl-8">
                 <h2 className="resume-name mb-0 text-uppercase">{name}</h2>
                 <Typed
                   className="resume-tagline mb-3 mb-md-0"
@@ -56,7 +56,7 @@ return (
                   smartBackspace
                 />
             </div>
-            <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+            <div className="resume-contact col-12 col-md-6 col-lg-4 col-xl-4">
                 <ul className="list-unstyled mb-0">
                     {contactInfo.map(info => {
                     return (

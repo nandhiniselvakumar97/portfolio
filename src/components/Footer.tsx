@@ -29,7 +29,7 @@ const Footer: FunctionComponent<IFooterProps> = ({details}: IFooterProps) => {
                 {details.map(item => {
                     return (
                         <li className="list-inline-item mb-lg-0 mr-3">
-                            <a className="resume-link" href={item.url}>
+                            <a className="resume-link" href={item.url} target="_blank">
                                 <FontAwesomeIcon icon={renderIcon(item.type)} size={'2x'} transform='down-4' className='mr-2'/>
                                 <span
                             className="d-none d-lg-inline-block text-muted">{item.value}</span></a></li>

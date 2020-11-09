@@ -15,7 +15,7 @@ const PositionsHeldSection: FunctionComponent<IPositionsHeldSection> = ({details
                 <ul className="list-unstyled resume-skills-list">
                     {details.university.map(item => {
                         return (
-                            <li key={uuidv4()} className="mb-2">{item}</li>
+                            <li key={uuidv4()} className="mb-2 text-justify">{item}</li>
                         )
                     })}
                 </ul>
@@ -25,7 +25,7 @@ const PositionsHeldSection: FunctionComponent<IPositionsHeldSection> = ({details
                 <ul className="list-unstyled resume-skills-list">
                     {details.school.map(item => {
                         return (
-                            <li key={uuidv4()} className="mb-2">{item}</li>
+                            <li key={uuidv4()} className="mb-2 text-justify">{item}</li>
                         )
                     })}
                 </ul>

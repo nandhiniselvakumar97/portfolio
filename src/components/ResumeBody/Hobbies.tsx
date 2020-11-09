@@ -13,7 +13,7 @@ const HobbiesSection: FunctionComponent<IHobbiesSection> = ({details}: IHobbiesS
                 <ul className="list-unstyled resume-skills-list">
                     {details.map(item => {
                         return (
-                            <li key={uuidv4()} className="mb-2">{item}</li>
+                            <li key={uuidv4()} className="mb-2 text-justify">{item}</li>
                         )
                     })}
                 </ul>

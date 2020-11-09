@@ -14,7 +14,7 @@ const AchievementsSection: FunctionComponent<IAchievementsSection> = ({details}:
                     <ul className="resume-list">
                         {details.map(item => {
                             return (
-                                <li key={uuidv4()}>{item}</li>
+                                <li key={uuidv4()} className='text-justify'>{item}</li>
                             )
                         })}
                     </ul>
