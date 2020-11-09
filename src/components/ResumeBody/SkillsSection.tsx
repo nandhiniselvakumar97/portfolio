@@ -21,7 +21,7 @@ const SkillsSection: FunctionComponent<ISkillsSection> = ({details}: ISkillsSect
                 </ul>
             </div>
             <div className="item">
-                <h4 className="item-title">Professional</h4>
+                <h4 className="item-title">Competency</h4>
                 <ul className="list-unstyled resume-skills-list">
                     {details.professional.map(item => {
                         return (
